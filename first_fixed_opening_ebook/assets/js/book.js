@@ -100,6 +100,11 @@ body { padding-top: 86px !important; }
 }
 .pattern-overlay-frame iframe { width: 100%; height: 100%; border: 0; display: block; }
 .artifact-hidden { display: none !important; }
+.diagram-card.cleaned .diagram-earns,
+.diagram-card.cleaned .diagram-source,
+.diagram-card.cleaned pre,
+.diagram-card.cleaned code { display: none !important; }
+.diagram-card.cleaned figcaption { border-top: 0 !important; }
 @media screen and (max-width: 760px) {
   body { padding-top: 78px !important; }
   .pattern-banner { min-height: 70px; grid-template-columns: 1fr auto; }
@@ -150,11 +155,115 @@ document.addEventListener('keydown', event => {
   if (event.key === 'Escape' && overlay.classList.contains('open')) unreferButton?.click();
 });
 
+const hideNode = el => {
+  if (!el || el === document.body || el.classList?.contains('pattern-banner') || el.classList?.contains('pattern-overlay')) return;
+  el.classList.add('artifact-hidden');
+};
+const normalized = el => (el?.textContent || '').replace(/\s+/g, ' ').trim();
+const slug = el => (el?.id || '').toLowerCase();
+const headings = [...document.querySelectorAll('h1, h2, h3')];
+const hideSectionFromHeading = (heading, stopSelector = 'h1, h2') => {
+  if (!heading) return;
+  hideNode(heading);
+  let node = heading.nextElementSibling;
+  while (node) {
+    if (node.matches(stopSelector)) break;
+    const next = node.nextElementSibling;
+    hideNode(node);
+    node = next;
+  }
+};
+const hideFromHeadingToEnd = heading => {
+  if (!heading) return;
+  hideNode(heading);
+  let node = heading.nextElementSibling;
+  while (node) {
+    const next = node.nextElementSibling;
+    hideNode(node);
+    node = next;
+  }
+};
+
+const metaHeadingPatterns = [
+  /^Project Orientation$/i,
+  /^Style Guide and Voice Contract$/i,
+  /^Diagram Policy$/i,
+  /^Mathematical Spine$/i,
+  /^Chapter Template Contract$/i,
+  /^How to Read This Book$/i,
+  /^Source Amalgamation Note$/i,
+  /^Part X\s*[—-]\s*Curriculum Map$/i,
+  /^Diagram Index$/i,
+  /^Original Pattern$/i,
+  /^Runtime Viewer$/i,
+  /^Appendix/i,
+  /^Source Ledger$/i
+];
+headings.forEach(h => {
+  const text = normalized(h);
+  if (metaHeadingPatterns.some(rx => rx.test(text))) {
+    if (/^Appendix/i.test(text) || /^Source Ledger$/i.test(text)) hideFromHeadingToEnd(h);
+    else hideSectionFromHeading(h, h.tagName === 'H1' ? 'h1' : 'h1, h2');
+  }
+});
+
+const junkPatterns = [
+  /Working status:/i,
+  /unified flat Markdown scaffold/i,
+  /BEGIN CLEAN_TOP_MATTER/i,
+  /END CLEAN_TOP_MATTER/i,
+  /diagram inventory/i,
+  /earlier seed prose/i,
+  /This document unifies/i,
+  /complete 615-block source ledger/i,
+  /source ledger belongs in the appendix/i,
+  /Appendix A:/i,
+  /Source Reference/i,
+  /DIAGRAM PLACEHOLDER/i,
+  /placeholder is installed/i,
+  /room for a .*still/i,
+  /Replace this authored placeholder/i,
+  /Snapshot cue:/i,
+  /pattern still target/i,
+  /Textbook scaffold/i,
+  /canonical ledger/i,
+  /display audit/i,
+  /snapshot plan/i,
+  /hidden JSON/i,
+  /GitHub/i,
+  /README/i,
+  /Working scaffold/i,
+  /main theorem placeholders/i,
+  /C:\\Users/i,
+  /The_First_Fixed_Opening/i,
+  /BEGIN|END/i
+];
+[...document.querySelectorAll('p, blockquote, h1, h2, h3, h4, hr, li, aside, section')].forEach(el => {
+  const text = normalized(el);
+  if (junkPatterns.some(rx => rx.test(text))) hideNode(el);
+});
+
+[...document.querySelectorAll('.source-card, .diagram-source, .diagram-earns')].forEach(hideNode);
+[...document.querySelectorAll('.diagram-card')].forEach(card => {
+  card.classList.add('cleaned');
+  [...card.querySelectorAll('figcaption p')].forEach(p => {
+    const text = normalized(p);
+    if (/placeholder|snapshot|still|runtime|pattern still|exported|source-aware|room for/i.test(text)) hideNode(p);
+  });
+  const frame = card.querySelector('.diagram-frame');
+  const hasSvg = !!frame?.querySelector('svg');
+  if (!hasSvg && /placeholder|svg class|viewBox|DIAGRAM PLACEHOLDER/i.test(normalized(frame))) hideNode(card);
+});
+
+[...document.querySelectorAll('pre, code')].forEach(el => {
+  if (/svg|diagram|placeholder|json|ledger|snapshot|runtime/i.test(normalized(el))) hideNode(el.closest('.diagram-card') || el);
+});
+
 const textWalker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
   acceptNode(node) {
     const parent = node.parentElement;
     if (!parent || ['SCRIPT', 'STYLE', 'IFRAME'].includes(parent.tagName)) return NodeFilter.FILTER_REJECT;
-    return /runtime|Runtime/.test(node.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
+    return /runtime|Runtime|Markdown|markdown|scaffold|Scaffold/.test(node.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
   }
 });
 const replacementNodes = [];
@@ -166,41 +275,24 @@ replacementNodes.forEach(node => {
     .replace(/runtime still target/g, 'pattern still target')
     .replace(/Runtime still target/g, 'Pattern still target')
     .replace(/runtime/g, 'original pattern')
-    .replace(/Runtime/g, 'Original Pattern');
+    .replace(/Runtime/g, 'Original Pattern')
+    .replace(/Markdown scaffold/gi, 'draft')
+    .replace(/Markdown/gi, 'text')
+    .replace(/scaffold/gi, 'book');
 });
 
-const junkPatterns = [
-  /Working status:\s*unified flat Markdown scaffold/i,
-  /BEGIN CLEAN_TOP_MATTER/i,
-  /END CLEAN_TOP_MATTER/i,
-  /Source Amalgamation Note/i,
-  /This document unifies/i,
-  /The detailed chapter scaffold, diagram inventory, curriculum map/i,
-  /unified flat Markdown scaffold/i
-];
-const hideNode = el => {
-  if (!el || el === document.body || el.classList?.contains('pattern-banner') || el.classList?.contains('pattern-overlay')) return;
-  el.classList.add('artifact-hidden');
-};
-[...document.querySelectorAll('p, blockquote, h1, h2, h3, hr, li')].forEach(el => {
-  const text = (el.textContent || '').replace(/\s+/g, ' ').trim();
-  if (junkPatterns.some(rx => rx.test(text))) {
-    hideNode(el);
-    const parent = el.parentElement;
-    if (parent && ['BLOCKQUOTE', 'ASIDE', 'SECTION'].includes(parent.tagName)) hideNode(parent);
-    if (/Source Amalgamation Note/i.test(text)) {
-      let next = el.nextElementSibling;
-      for (let i = 0; next && i < 4; i++) {
-        const current = next;
-        next = next.nextElementSibling;
-        hideNode(current);
-        if (current.tagName === 'HR') break;
-      }
-    }
-  }
+[...document.querySelectorAll('p, li, blockquote')].forEach(el => {
+  const text = normalized(el);
+  if (!text || text === '---' || /^[-–—]+$/.test(text)) hideNode(el);
 });
-[...document.querySelectorAll('p')].forEach(p => {
-  if (!p.textContent.trim()) p.classList.add('artifact-hidden');
+
+[...document.querySelectorAll('aside, section, figure')].forEach(el => {
+  const visibleText = [...el.querySelectorAll('*')]
+    .filter(child => !child.classList.contains('artifact-hidden'))
+    .map(child => child.textContent.trim())
+    .join(' ')
+    .trim();
+  if (!visibleText && !el.querySelector('svg, iframe')) hideNode(el);
 });
 
 const topButton = document.querySelector('.top-button');

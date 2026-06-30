@@ -1,0 +1,307 @@
+{
+  "id": "theorem-zero-textbook-snapshot-plan",
+  "purpose": "Hidden machine-readable plan for extracting textbook JPEG stills from the active canvas runtime; this block is not viewer-facing and does not participate in canonical ledger verification.",
+  "source_files_consulted": [
+    "theorem-zero-ledger in this HTML runtime",
+    "theorem-zero-runtime-display-audit in this HTML runtime",
+    "The_First_Fixed_Opening_Unified_Textbook_Scaffold(10).md"
+  ],
+  "visibility_policy": {
+    "viewer_facing": false,
+    "html_form": "application/json script block",
+    "visual_runtime_unchanged": true,
+    "canonical_ledger_unchanged": true,
+    "reason_separate_from_ledger": "The canonical ledger is hard-verified by strict deep equality; textbook extraction metadata must remain outside it."
+  },
+  "capture_basis": {
+    "loop_duration_s": 55.0,
+    "capture_unit": "seconds from loop start, before modulo reset",
+    "recommended_output_format": "jpeg",
+    "recommended_canvas_state": "capture after drawing the animation frame at the requested timestamp",
+    "textbook_policy": "Use the earliest clear picture; prefer visible action over symbolic explanation; avoid clutter; show what is earned before naming it.",
+    "important_caution": "Camera reach changes during stage endings; avoid transition frames as primary textbook diagrams unless explaining viewport behavior."
+  },
+  "carrier_family_resolution_note": {
+    "best_timestamps_s": [
+      51.5,
+      52.0,
+      52.5
+    ],
+    "canonical_frame_s": 52.0,
+    "aesthetic_frame_s": 52.5,
+    "description": "The late runtime resolves into final catchment stations plus native carrier families. It is not pure lines only: the 73 unique resolved stations remain visible while construction scaffolding has faded away.",
+    "lawfulness_note": "The visible carrier families are the native q=constant, r=constant, and q+r=constant families declared by the substrate, not a Cartesian square grid."
+  },
+  "primary_snapshot_set": [
+    {
+      "index": 1,
+      "timestamp_s": 1.8,
+      "filename": "diagram_runtime_01_sweep_boundary_001p8.jpg",
+      "stage": "first_circle",
+      "title": "Sweep Becomes Boundary",
+      "what_should_be_visible": "Origin centre visible with the first circle sweep underway; generated stations have not yet dominated the frame.",
+      "textbook_placement": [
+        "Chapter 2 - A Sweep Becomes a Boundary"
+      ],
+      "concept_supported": "A fixed opening swept from a centre makes a boundary.",
+      "why_useful": "It is the earliest clear action-frame for boundary generation.",
+      "caption_note": "The circle is a swept construction boundary, not a coordinate object."
+    },
+    {
+      "index": 2,
+      "timestamp_s": 2.9,
+      "filename": "diagram_runtime_02_boundary_stations_002p9.jpg",
+      "stage": "first_circle",
+      "title": "Boundary Stations Appear",
+      "what_should_be_visible": "Six perimeter stations beginning to appear around the centre, with the sweep still readable.",
+      "textbook_placement": [
+        "Chapter 3 - Boundary Positions Become Stations"
+      ],
+      "concept_supported": "Reached boundary positions can become construction stations.",
+      "why_useful": "Shows stationhood emerging from the boundary rather than from a grid.",
+      "caption_note": "Stations are selected/generated substrate positions, not arbitrary particles."
+    },
+    {
+      "index": 3,
+      "timestamp_s": 5.6,
+      "filename": "diagram_runtime_03_fixed_reach_six_stations_005p6.jpg",
+      "stage": "first_circle",
+      "title": "Fixed Reach to Six Stations",
+      "what_should_be_visible": "Centre, six generated stations, and radii from the centre becoming clear.",
+      "textbook_placement": [
+        "Chapter 2 - A Sweep Becomes a Boundary",
+        "Chapter 5 - The First Triangle"
+      ],
+      "concept_supported": "The same unit reach connects the centre to each generated neighbour.",
+      "why_useful": "Best compact frame for fixed unit reach before chords and cells make the image busier.",
+      "caption_note": "Radii are measurement witnesses / overlays; the station rule remains axial."
+    },
+    {
+      "index": 4,
+      "timestamp_s": 7.4,
+      "filename": "diagram_runtime_04_boundary_chords_007p4.jpg",
+      "stage": "first_circle",
+      "title": "Boundary Chords and Step Cycle",
+      "what_should_be_visible": "Perimeter chords forming between adjacent generated stations; radii still visible.",
+      "textbook_placement": [
+        "Chapter 4 - The First Boundary Step",
+        "Chapter 6 - Six Steps Close"
+      ],
+      "concept_supported": "Adjacent boundary stations are joined by fixed-opening steps.",
+      "why_useful": "Gives a clear still for boundary-to-boundary step and chord formation.",
+      "caption_note": "Chords are joined construction marks; they are not the swept circumference itself."
+    },
+    {
+      "index": 5,
+      "timestamp_s": 8.8,
+      "filename": "diagram_runtime_05_six_central_cells_008p8.jpg",
+      "stage": "first_circle",
+      "title": "Six Central Cells",
+      "what_should_be_visible": "Six triangular cell fills around the centre, with radii and chords still readable.",
+      "textbook_placement": [
+        "Chapter 7 - Six Triangles Around a Center"
+      ],
+      "concept_supported": "Six equal-opening cells fill the turn around the centre.",
+      "why_useful": "The cell structure is visually strong but not yet fully fading.",
+      "caption_note": "Cell fills are instructional overlays; the lawful points remain substrate stations."
+    },
+    {
+      "index": 6,
+      "timestamp_s": 9.4,
+      "filename": "diagram_runtime_06_hexagon_as_cells_009p4.jpg",
+      "stage": "first_circle",
+      "title": "Hexagon as Six Cells",
+      "what_should_be_visible": "Circle, six radii, six perimeter chords, and six central triangular cells all readable.",
+      "textbook_placement": [
+        "Chapter 8 - The Hexagon Inside the Construction"
+      ],
+      "concept_supported": "The hexagon is the outside edge of the six source-earned cells.",
+      "why_useful": "Strongest still for hexagon-as-constructed-body rather than imported polygon.",
+      "caption_note": "The hexagon is a straight-edged reading of selected station joins, not the circumference."
+    },
+    {
+      "index": 7,
+      "timestamp_s": 12.2,
+      "filename": "diagram_runtime_07_direction_families_emerge_012p2.jpg",
+      "stage": "first_circle",
+      "title": "Direction Families Emerging",
+      "what_should_be_visible": "Construction scaffolding mostly fading while native carrier-family lines are becoming bright.",
+      "textbook_placement": [
+        "Chapter 8 - The Hexagon Inside the Construction",
+        "Chapter 9 - Direction Appears"
+      ],
+      "concept_supported": "The first construction exposes recurring direction families.",
+      "why_useful": "Shows direction arising after the hexagon/cell construction rather than before it.",
+      "caption_note": "These are the three native triangular carrier families, not square-grid axes."
+    },
+    {
+      "index": 8,
+      "timestamp_s": 13.0,
+      "filename": "diagram_runtime_08_first_field_carriers_013p0.jpg",
+      "stage": "first_circle",
+      "title": "First Field Carriers",
+      "what_should_be_visible": "Carrier families dominate the first-circle field with most construction marks gone.",
+      "textbook_placement": [
+        "Chapter 9 - Direction Appears"
+      ],
+      "concept_supported": "Direction can be read before coordinates, slope, or equations.",
+      "why_useful": "Clean first-stage carrier-family still.",
+      "caption_note": "Direction has appeared; coordinates have not created it."
+    },
+    {
+      "index": 9,
+      "timestamp_s": 18.8,
+      "filename": "diagram_runtime_09_field_extension_generation_018p8.jpg",
+      "stage": "seven_circle_field",
+      "title": "Field Extension by Generation",
+      "what_should_be_visible": "Seven active centres with circle sweeps and generated perimeter stations appearing.",
+      "textbook_placement": [
+        "Chapter 10 - Extending the Field"
+      ],
+      "concept_supported": "The same generation rule repeats from multiple active centres.",
+      "why_useful": "Shows field growth by repeated source rule rather than arbitrary decoration.",
+      "caption_note": "Some generated coordinates may coincide; duplicates are identified by coordinate, not by brightness."
+    },
+    {
+      "index": 10,
+      "timestamp_s": 25.0,
+      "filename": "diagram_runtime_10_triangular_tessellation_025p0.jpg",
+      "stage": "seven_circle_field",
+      "title": "Triangular Tessellation Emerges",
+      "what_should_be_visible": "Seven-centre construction with dense repeated triangular cells visible.",
+      "textbook_placement": [
+        "Chapter 10 - Extending the Field",
+        "Chapter 12 - Figures as Source-Earned Bodies"
+      ],
+      "concept_supported": "Repeated direction-family structure produces a triangular field of cells.",
+      "why_useful": "Good still for transition from first construction to field extension.",
+      "caption_note": "The repeated cells are source-bound triangular cells, not an imported tiling background."
+    },
+    {
+      "index": 11,
+      "timestamp_s": 29.0,
+      "filename": "diagram_runtime_11_medium_carrier_field_029p0.jpg",
+      "stage": "seven_circle_field",
+      "title": "Medium Carrier Field",
+      "what_should_be_visible": "Seven-field construction mostly released, with carrier families visible across a wider reach.",
+      "textbook_placement": [
+        "Chapter 9 - Direction Appears",
+        "Chapter 10 - Extending the Field"
+      ],
+      "concept_supported": "Carrier directions continue beyond the first boundary.",
+      "why_useful": "Good bridge image between the first-circle carrier still and final catchment still.",
+      "caption_note": "Camera reach is wider here; mathematical unit relation is unchanged."
+    },
+    {
+      "index": 12,
+      "timestamp_s": 45.2,
+      "filename": "diagram_runtime_12_full_overlay_audit_045p2.jpg",
+      "stage": "thirteen_circle_catchment",
+      "title": "Full Construction Overlay Audit",
+      "what_should_be_visible": "Thirteen-centre construction with circle sweeps, radii, chords, generated stations, and cells visible.",
+      "textbook_placement": [
+        "Appendix - Runtime / Substrate Audit"
+      ],
+      "concept_supported": "The final catchment is built by active centres and six-neighbour generation before resolving.",
+      "why_useful": "Best audit frame for all construction overlay types present at once.",
+      "caption_note": "This is scaffolding, not the final substrate definition."
+    },
+    {
+      "index": 13,
+      "timestamp_s": 52.0,
+      "filename": "diagram_runtime_13_resolved_73_station_catchment_052p0.jpg",
+      "stage": "thirteen_circle_catchment",
+      "title": "Resolved 73-Station Catchment",
+      "what_should_be_visible": "Final resolved catchment stations with native carrier families bright; circles, joins, radii, chords, and cells gone or negligible.",
+      "textbook_placement": [
+        "Chapter 10 - Extending the Field",
+        "Appendix - Canonical Field State"
+      ],
+      "concept_supported": "The construction resolves into lawful field stations plus native carrier families.",
+      "why_useful": "Best canonical final-field still for the 73-station catchment.",
+      "caption_note": "Final stations are the coordinate union of active centres and unique generated stations."
+    },
+    {
+      "index": 14,
+      "timestamp_s": 52.5,
+      "filename": "diagram_runtime_14_direction_family_final_052p5.jpg",
+      "stage": "thirteen_circle_catchment",
+      "title": "Direction-Family Dominant Final Frame",
+      "what_should_be_visible": "Native carrier families visually dominate over the resolved station field.",
+      "textbook_placement": [
+        "Chapter 9 - Direction Appears",
+        "Chapter 23 - Lines, Slopes, and Direction Families"
+      ],
+      "concept_supported": "Direction families remain native to the triangular substrate and later coordinates only record them.",
+      "why_useful": "Best aesthetic still for the moment that feels like families of direction lines.",
+      "caption_note": "Not pure lines only: resolved stations remain part of the displayed final field."
+    }
+  ],
+  "optional_secondary_frames": [
+    {
+      "timestamp_s": 0.5,
+      "use": "Origin / first station",
+      "caution": "Too minimal for most textbook use, but useful as a seed image."
+    },
+    {
+      "timestamp_s": 14.2,
+      "use": "Camera reach transition after first circle",
+      "caution": "Use only when explaining viewport behavior."
+    },
+    {
+      "timestamp_s": 15.8,
+      "use": "Seven active centres beginning",
+      "caution": "Useful if the book needs a clear active-centre expansion still before generation appears."
+    },
+    {
+      "timestamp_s": 32.8,
+      "use": "Thirteen active centres beginning",
+      "caution": "Best for appendix/audit rather than learner-facing early chapters."
+    },
+    {
+      "timestamp_s": 37.0,
+      "use": "Thirteen-centre generated stations",
+      "caution": "Dense; needs captioning to prevent particle-like misreading."
+    },
+    {
+      "timestamp_s": 54.0,
+      "use": "Loop return / camera behavior",
+      "caution": "Avoid as a concept diagram because the camera is transitioning."
+    }
+  ],
+  "frames_to_avoid_as_primary_diagrams": [
+    {
+      "range_s": [
+        14.0,
+        14.8
+      ],
+      "reason": "First-circle to seven-circle camera transition; lawful but pedagogically ambiguous."
+    },
+    {
+      "range_s": [
+        30.5,
+        31.8
+      ],
+      "reason": "Seven-circle to thirteen-circle camera transition; reach is changing."
+    },
+    {
+      "range_s": [
+        53.0,
+        54.8
+      ],
+      "reason": "Final camera return toward loop reset; may make scale look mathematical."
+    },
+    {
+      "timestamp_s": 50.0,
+      "reason": "Final resolved field is still transitional; use 52.0s instead."
+    }
+  ],
+  "caption_bank": [
+    "The compass opening stays fixed; the camera may change reach.",
+    "Canvas projection is not the substrate; stations are integer axial (q,r) positions.",
+    "Circles, radii, chords, and cell fills are construction overlays, not substrate definitions.",
+    "Duplicate generated coordinates are identified as one station in the catchment.",
+    "Carrier families are q=constant, r=constant, and q+r=constant; they are not a square grid.",
+    "Coordinates and slopes come later as records of the field, not sources of it."
+  ]
+}

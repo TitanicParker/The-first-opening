@@ -1,0 +1,674 @@
+[
+  {
+    "id": "diagram-0-1",
+    "number": "0.1",
+    "title": "Whole Book Derivation Map",
+    "chapter": "0",
+    "description": "Fixed Opening → Boundary → Stations → Equal Step → Equal Cell → Sixfold Closure → Direction Families → Triangular Field → Geometry → Rightness/Ratio → Trigonometry → Coordinate Audit → Algebra",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-0-2",
+    "number": "0.2",
+    "title": "Four Branch Map",
+    "chapter": "0",
+    "description": "Triangular Field branching into Geometry, Trigonometry, Coordinate Geometry, and Algebra.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-1-1",
+    "number": "1.1",
+    "title": "Compass Opening Fixed",
+    "chapter": "1",
+    "description": "Compass with two legs; label compass point, pencil point, fixed opening, unit reach. The diagram should be simple and uncluttered.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-1-2",
+    "number": "1.2",
+    "title": "Same Opening After Station Transfer",
+    "chapter": "1",
+    "description": "The same compass opening shown at Station A and then at Station B. Use matching marks to show that the opening has not changed.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-2-1",
+    "number": "2.1",
+    "title": "Center Station and Fixed Opening",
+    "chapter": "2",
+    "description": "Center O with compass point standing at O. Pencil point is one fixed opening away from O. Label the opening as the same reach that was fixed in Chapter 1.",
+    "runtime": "1.8s"
+  },
+  {
+    "id": "diagram-2-2",
+    "number": "2.2",
+    "title": "Sweep Trace",
+    "chapter": "2",
+    "description": "Pencil sweeps around O and leaves a smooth boundary. Show the compass point still at O.",
+    "runtime": "1.8s"
+  },
+  {
+    "id": "diagram-2-3",
+    "number": "2.3",
+    "title": "Boundary as Reached Places",
+    "chapter": "2",
+    "description": "Several points on the boundary, each joined back to O by the same reach. Use matching marks to show the reach is the same each time.",
+    "runtime": "1.8s"
+  },
+  {
+    "id": "diagram-3-1",
+    "number": "3.1",
+    "title": "Selecting a Boundary Position",
+    "chapter": "3",
+    "description": "Show the boundary around center O. Mark one point on the boundary and label it A. Keep the diagram quiet: one center, one boundary, one chosen point.",
+    "runtime": "2.9s"
+  },
+  {
+    "id": "diagram-3-2",
+    "number": "3.2",
+    "title": "Boundary Position Becomes Station",
+    "chapter": "3",
+    "description": "Show the compass point moved from O to A. Use the same opening mark as before so the reader sees that the opening has travelled unchanged.",
+    "runtime": "2.9s"
+  },
+  {
+    "id": "diagram-4-1",
+    "number": "4.1",
+    "title": "Sweep from Boundary Station",
+    "chapter": "4",
+    "description": "Show original center O, original boundary, and boundary station A. Add a new sweep centered at A using the same opening.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-4-2",
+    "number": "4.2",
+    "title": "Meeting with the Base Boundary",
+    "chapter": "4",
+    "description": "Show the sweep from A meeting the original boundary at B. Make the meeting point clear.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-4-3",
+    "number": "4.3",
+    "title": "Equal-Opening Step A to B",
+    "chapter": "4",
+    "description": "Highlight segment AB. Use the same opening mark used for OA. The reader should see that AB is one use of the same opening.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-5-1",
+    "number": "5.1",
+    "title": "Three Stations O, A, B",
+    "chapter": "5",
+    "description": "Show O at the center and A and B as adjacent boundary stations. Do not overlabel. The reader should first see the three points.",
+    "runtime": "5.6s"
+  },
+  {
+    "id": "diagram-5-2",
+    "number": "5.2",
+    "title": "Three Equal-Opening Sides",
+    "chapter": "5",
+    "description": "Highlight OA, OB, and AB with the same tick mark or opening mark. The diagram should make 'three sides, one opening' obvious.",
+    "runtime": "5.6s"
+  },
+  {
+    "id": "diagram-5-3",
+    "number": "5.3",
+    "title": "First Equal-Opening Cell",
+    "chapter": "5",
+    "description": "Lightly shade triangle OAB. Keep the equal-opening marks visible.",
+    "runtime": "5.6s"
+  },
+  {
+    "id": "diagram-6-1",
+    "number": "6.1",
+    "title": "Boundary Step Sequence",
+    "chapter": "6",
+    "description": "Boundary with stations A0, A1, A2, A3, A4, and A5 appearing one step at a time. Show the same compass opening between neighboring stations.",
+    "runtime": "7.4s"
+  },
+  {
+    "id": "diagram-6-2",
+    "number": "6.2",
+    "title": "Sixth Step Returns",
+    "chapter": "6",
+    "description": "The final step from A5 back to A0. Make the return visually clear.",
+    "runtime": "7.4s"
+  },
+  {
+    "id": "diagram-6-3",
+    "number": "6.3",
+    "title": "Closed Six-Step Boundary Cycle",
+    "chapter": "6",
+    "description": "Completed six-station boundary cycle. Keep it plain. Do not overload it with later labels.",
+    "runtime": "7.4s"
+  },
+  {
+    "id": "diagram-7-1",
+    "number": "7.1",
+    "title": "Six Central Cells",
+    "chapter": "7",
+    "description": "Six triangles around center O. Shade or outline the cells lightly.",
+    "runtime": "8.8s"
+  },
+  {
+    "id": "diagram-7-2",
+    "number": "7.2",
+    "title": "Adjacent Cells Share a Radius",
+    "chapter": "7",
+    "description": "Two neighboring central cells sharing one center-to-boundary side.",
+    "runtime": "8.8s"
+  },
+  {
+    "id": "diagram-7-3",
+    "number": "7.3",
+    "title": "Complete Turn Field",
+    "chapter": "7",
+    "description": "Full six-cell turn around O. The center should feel like the meeting place of the six cells.",
+    "runtime": "8.8s"
+  },
+  {
+    "id": "diagram-8-1",
+    "number": "8.1",
+    "title": "Boundary Hexagon",
+    "chapter": "8",
+    "description": "Six boundary stations connected as a hexagonal outline. Keep the center faint or absent in the first version.",
+    "runtime": "9.4s"
+  },
+  {
+    "id": "diagram-8-2",
+    "number": "8.2",
+    "title": "Hexagon with Six Radii",
+    "chapter": "8",
+    "description": "Same hexagon with center O joined to all six boundary stations. Show that the hexagon is carried by the six central cells.",
+    "runtime": "9.4s"
+  },
+  {
+    "id": "diagram-8-3",
+    "number": "8.3",
+    "title": "Hexagon as Six Equal-Opening Cells",
+    "chapter": "8",
+    "description": "Hexagon decomposed into six central triangular cells.",
+    "runtime": "9.4s"
+  },
+  {
+    "id": "diagram-8-4",
+    "number": "8.4",
+    "title": "Three Direction Pairs in the Hexagon",
+    "chapter": "8",
+    "description": "Highlight opposite side pairs of the hexagon in three visual styles. The point is simple: three pairs, three directions.",
+    "runtime": "9.4s"
+  },
+  {
+    "id": "diagram-9-1",
+    "number": "9.1",
+    "title": "Direction Pairs in the Hexagon",
+    "chapter": "9",
+    "description": "A hexagon with opposite sides highlighted in matching styles. Show three pairs: one pair horizontal or nearly horizontal, and two slanted pairs. Keep the center and radii faint or optional.",
+    "runtime": "12.2s / 13.0s / 52.5s"
+  },
+  {
+    "id": "diagram-9-2",
+    "number": "9.2",
+    "title": "Three Direction Families",
+    "chapter": "9",
+    "description": "The same hexagon with the three direction families extended lightly through the field. Use three line styles, not heavy color dependence.",
+    "runtime": "12.2s / 13.0s / 52.5s"
+  },
+  {
+    "id": "diagram-9-3",
+    "number": "9.3",
+    "title": "Direction Family Without Coordinates",
+    "chapter": "9",
+    "description": "Same-direction recurrence shown without axes, numbers, or slope. The reader should see that direction is recognized by repeated way-of-running.",
+    "runtime": "12.2s / 13.0s / 52.5s"
+  },
+  {
+    "id": "diagram-10-1",
+    "number": "10.1",
+    "title": "Extending One Direction Family",
+    "chapter": "10",
+    "description": "One pair of same-direction lines from the hexagon extended beyond the boundary. Keep everything else light.",
+    "runtime": "18.8s / 25.0s / 29.0s"
+  },
+  {
+    "id": "diagram-10-2",
+    "number": "10.2",
+    "title": "Two Families Meet",
+    "chapter": "10",
+    "description": "Two extended direction families meeting outside the first hexagon, with new stations marked at their crossings.",
+    "runtime": "18.8s / 25.0s / 29.0s"
+  },
+  {
+    "id": "diagram-10-3",
+    "number": "10.3",
+    "title": "Triangular Tessellation Emerges",
+    "chapter": "10",
+    "description": "Repeated triangular cells appearing beyond the first hexagon. Show that they share the same three directions.",
+    "runtime": "18.8s / 25.0s / 29.0s"
+  },
+  {
+    "id": "diagram-10-4",
+    "number": "10.4",
+    "title": "First Field vs Extended Field",
+    "chapter": "10",
+    "description": "Original sixfold construction emphasized inside a larger triangular field. The reader should see that the large field grows from the first construction.",
+    "runtime": "18.8s / 25.0s / 29.0s"
+  },
+  {
+    "id": "diagram-11-1",
+    "number": "11.1",
+    "title": "Local Relation in One Cell",
+    "chapter": "11",
+    "description": "One triangular cell with a side or relation marked. Include a small note showing why the relation is earned.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-11-2",
+    "number": "11.2",
+    "title": "Lawful Transport to Another Cell",
+    "chapter": "11",
+    "description": "A second cell in the same field with the same source condition highlighted. Show the relation traveling by structure, not by appearance.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-11-3",
+    "number": "11.3",
+    "title": "Invalid Copy by Appearance",
+    "chapter": "11",
+    "description": "A visually similar shape outside or unsupported by the field. Mark it gently as not licensed.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-12-1",
+    "number": "12.1",
+    "title": "Triangle as Earned Cell",
+    "chapter": "12",
+    "description": "One triangular cell from the field. Keep the field faintly visible behind it. Mark the three source-earned sides.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-12-2",
+    "number": "12.2",
+    "title": "Rhombus as Two Cells",
+    "chapter": "12",
+    "description": "Two adjacent triangular cells sharing one side. Shade the two cells together as one rhombus.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-12-3",
+    "number": "12.3",
+    "title": "Hexagon as Six Cells",
+    "chapter": "12",
+    "description": "The central hexagon shown as six triangular cells around the center.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-13-1",
+    "number": "13.1",
+    "title": "Shared Side Between Adjacent Cells",
+    "chapter": "13",
+    "description": "Two triangular cells sharing one side. Mark the shared side clearly.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-13-2",
+    "number": "13.2",
+    "title": "Path Across Cells",
+    "chapter": "13",
+    "description": "A chain of triangular cells. Show a path passing from cell to cell through shared sides.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-13-3",
+    "number": "13.3",
+    "title": "Boundary Path vs Interior Path",
+    "chapter": "13",
+    "description": "Show one path along the outside boundary and another path through interior shared sides.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-14-1",
+    "number": "14.1",
+    "title": "One Cell as Area Seed",
+    "chapter": "14",
+    "description": "One triangular cell shaded as the first area piece.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-14-2",
+    "number": "14.2",
+    "title": "Rhombus Equals Two Cells",
+    "chapter": "14",
+    "description": "A rhombus split into two triangular cells. Label it as two cells.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-14-3",
+    "number": "14.3",
+    "title": "Hexagon Equals Six Cells",
+    "chapter": "14",
+    "description": "The central hexagon split into six triangular cells. Label it as six cells.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-14-4",
+    "number": "14.4",
+    "title": "Larger Region by Cell Count",
+    "chapter": "14",
+    "description": "A larger region in the triangular field, shaded and counted by cells.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-15-1",
+    "number": "15.1",
+    "title": "Opposite Boundary Connectors",
+    "chapter": "15",
+    "description": "Show the sixfold field with selected connectors between opposite boundary stations. Keep the diagram uncluttered. The reader should see the connectors before seeing any right-angle mark.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-15-2",
+    "number": "15.2",
+    "title": "Selected Connectors Meeting at Center",
+    "chapter": "15",
+    "description": "Show two selected connectors meeting at the center or inside the field. Highlight the meeting point.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-15-3",
+    "number": "15.3",
+    "title": "Right-Meeting Evidence",
+    "chapter": "15",
+    "description": "Add the right-angle marker only after the selected connectors are visible. The marker should feel like a label on earned structure, not an assumption.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-16-1",
+    "number": "16.1",
+    "title": "Extracting a Right Triangle from the Field",
+    "chapter": "16",
+    "description": "Show the full field faintly, then highlight one right triangle inside it. The right meeting should be visible as one corner.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-16-2",
+    "number": "16.2",
+    "title": "Side Roles",
+    "chapter": "16",
+    "description": "Show the same triangle with the side across from the right corner identified as the longest side. Do not overload with trigonometric labels yet.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-16-3",
+    "number": "16.3",
+    "title": "Field Source Behind the Triangle",
+    "chapter": "16",
+    "description": "Show the triangle again with the field still visible behind it, so the reader sees that the triangle was extracted from the field.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-17-1",
+    "number": "17.1",
+    "title": "1, sqrt(3), 2 Triangle",
+    "chapter": "17",
+    "description": "Show one field-right triangle labeled with side packet 1, sqrt(3), and 2. Keep it embedded in or visibly linked to the field.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-17-2",
+    "number": "17.2",
+    "title": "Same Triangle, Different Chosen Angle",
+    "chapter": "17",
+    "description": "Show the same triangle twice, choosing a different acute angle each time. Make clear that opposite and adjacent roles switch.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-17-3",
+    "number": "17.3",
+    "title": "Ratio Packet Before Names",
+    "chapter": "17",
+    "description": "Show side comparisons as plain ratios before using sine, cosine, or tangent.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-18-1",
+    "number": "18.1",
+    "title": "Sine as Opposite over Hypotenuse",
+    "chapter": "18",
+    "description": "Highlight the opposite side and hypotenuse relative to one chosen acute angle.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-18-2",
+    "number": "18.2",
+    "title": "Cosine as Adjacent over Hypotenuse",
+    "chapter": "18",
+    "description": "Highlight the adjacent side and hypotenuse relative to the same chosen angle.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-18-3",
+    "number": "18.3",
+    "title": "Tangent as Opposite over Adjacent",
+    "chapter": "18",
+    "description": "Highlight the opposite and adjacent sides relative to the same chosen angle.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-18-4",
+    "number": "18.4",
+    "title": "Three Ratio Names on One Triangle",
+    "chapter": "18",
+    "description": "One summary triangle with the three named comparisons shown cleanly. Avoid clutter by using callouts if needed.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-19-1",
+    "number": "19.1",
+    "title": "Ratio Family from One Triangle",
+    "chapter": "19",
+    "description": "Show sine, cosine, and tangent as three callouts from the same triangle. Make the shared sides visually obvious.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-19-2",
+    "number": "19.2",
+    "title": "Complementary Side Role Exchange",
+    "chapter": "19",
+    "description": "Show the two acute angles in the same right triangle. Show how opposite and adjacent roles switch when the chosen angle changes.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-19-3",
+    "number": "19.3",
+    "title": "Tangent as Ratio of Ratio Records",
+    "chapter": "19",
+    "description": "Show tangent connected to sine and cosine through shared side comparisons. Keep the diagram visual before symbolic.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-20-1",
+    "number": "20.1",
+    "title": "Unit Circle as Organizer",
+    "chapter": "20",
+    "description": "Unit circle with center O, radius 1, and a chosen radius leaning from the center to the boundary. Keep the picture clean.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-20-2",
+    "number": "20.2",
+    "title": "Projection Coordinates",
+    "chapter": "20",
+    "description": "From the end of the radius, drop a vertical line to the horizontal axis. Show horizontal reach and vertical reach.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-20-3",
+    "number": "20.3",
+    "title": "Triangle Ratio to Circle Coordinate",
+    "chapter": "20",
+    "description": "Same right triangle shown first as a triangle, then placed inside the unit circle.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-20-4",
+    "number": "20.4",
+    "title": "Unit Circle Overlaid on Source Field",
+    "chapter": "20",
+    "description": "Unit circle lightly overlaid on the constructed field. The circle organizes; it does not replace the field.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-21-1",
+    "number": "21.1",
+    "title": "Constructed Stations Before Coordinates",
+    "chapter": "21",
+    "description": "A small triangular field with stations and cells but no axes or coordinate labels.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-21-2",
+    "number": "21.2",
+    "title": "Coordinates Added Afterward",
+    "chapter": "21",
+    "description": "Same field with coordinate labels added after the construction is visible.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-21-3",
+    "number": "21.3",
+    "title": "Coordinate Label as Memory Tag",
+    "chapter": "21",
+    "description": "One station shown with both its constructional role and its coordinate label.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-22-1",
+    "number": "22.1",
+    "title": "Two Coordinate Records",
+    "chapter": "22",
+    "description": "Two stations in the field, each with a coordinate label.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-22-2",
+    "number": "22.2",
+    "title": "Difference Vector",
+    "chapter": "22",
+    "description": "Arrow from the first station to the second station, labelled as the difference between the two coordinate records.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-22-3",
+    "number": "22.3",
+    "title": "Norm as Distance Audit",
+    "chapter": "22",
+    "description": "Same arrow checked against a distance or norm rule. Keep the construction visible underneath.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-22-4",
+    "number": "22.4",
+    "title": "Projection Components",
+    "chapter": "22",
+    "description": "Difference broken into field-direction components.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-23-1",
+    "number": "23.1",
+    "title": "Direction Family Before Slope",
+    "chapter": "23",
+    "description": "One direction family highlighted in the triangular field, without axes.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-23-2",
+    "number": "23.2",
+    "title": "Slope as Coordinate Record",
+    "chapter": "23",
+    "description": "Axes or coordinate labels added after the direction family is visible. Show slope as a record, not a source.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-23-3",
+    "number": "23.3",
+    "title": "Line Equation as Direction Memory",
+    "chapter": "23",
+    "description": "Several stations on the same line with a simple equation label beside them.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-24-1",
+    "number": "24.1",
+    "title": "From Constructed Relation to Symbol",
+    "chapter": "24",
+    "description": "A constructed side relation shown in a figure, then labeled with a symbol.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-24-2",
+    "number": "24.2",
+    "title": "Symbol as Memory Token",
+    "chapter": "24",
+    "description": "The symbol shown beside the figure with an arrow back to the relation it remembers.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-24-3",
+    "number": "24.3",
+    "title": "Formula as Compressed Diagram",
+    "chapter": "24",
+    "description": "A figure on one side and a short symbolic relation on the other. The formula should feel like a compressed record of the figure.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-25-1",
+    "number": "25.1",
+    "title": "Missing Relation Marked as Unknown",
+    "chapter": "25",
+    "description": "A known structure with one side, distance, coordinate, or ratio marked x. The diagram should show that x belongs to an existing relation. It should not float by itself.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-25-2",
+    "number": "25.2",
+    "title": "Equation as Constraint",
+    "chapter": "25",
+    "description": "The same structure beside an equation. Use arrows or matching labels to show which parts of the picture became symbols.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-25-3",
+    "number": "25.3",
+    "title": "Solving Recovers the Missing Relation",
+    "chapter": "25",
+    "description": "The original structure after x has been found. Show the value returned to the place where the unknown stood.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-26-1",
+    "number": "26.1",
+    "title": "Same Relation, Different Forms",
+    "chapter": "26",
+    "description": "One relation shown in several equivalent symbolic forms. Each form should be connected back to the same source relation.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-26-2",
+    "number": "26.2",
+    "title": "Lawful vs Unlawful Transformation",
+    "chapter": "26",
+    "description": "Two-column diagram. Left column: a transformation that preserves equality. Right column: a move that changes only one side and breaks equality.",
+    "runtime": ""
+  },
+  {
+    "id": "diagram-26-3",
+    "number": "26.3",
+    "title": "Final Branch Convergence",
+    "chapter": "26",
+    "description": "Four branches returning to one source-bound view. Geometry = constructed figure. Trigonometry = stable ratio. Coordinate geometry = audited position. Algebra = transformed relation.",
+    "runtime": ""
+  }
+]

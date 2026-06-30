@@ -1,45 +1,35 @@
-# The First Fixed Opening — Nested eBook Upload Folder
+# The First Fixed Opening — HTML eBook Integration
 
-This folder is the nested location for the full HTML eBook package.
+This package converts the unified Markdown scaffold into a polished, source-bound HTML eBook and preserves the Theorem Zero runtime intact.
 
-Upload the extracted files from `first_fixed_opening_ebook.zip` into this folder so the repository contains the complete package as one clickable folder.
+## Open
 
-## Expected structure
+Open `index.html` in a browser.
 
-```text
-first_fixed_opening_ebook/
-  README.md
-  index.html
-  assets/
-    css/
-      book.css
-    js/
-      book.js
-    runtime/
-      theorem_zero_runtime.html
-    data/
-      canonical-ledger.json
-      display-audit.json
-      snapshot-plan.json
-      diagram-index.json
-    images/
-      diagrams/
-  sources/
-    Handover_Brief_Final_HTML_eBook_Integration.md
-    The_First_Fixed_Opening_Unified_Textbook_Scaffold.md
-```
+## Included
 
-## Upload order
+- `index.html` — full eBook shell with title page, table of contents, main text, diagram index, and runtime viewer.
+- `assets/css/book.css` — runtime-inspired luminous visual theme.
+- `assets/js/book.js` — active table-of-contents highlighting and back-to-top affordance.
+- `assets/runtime/theorem_zero_runtime.html` — original runtime preserved as a source artifact.
+- `assets/data/canonical-ledger.json` — extracted hidden canonical ledger metadata.
+- `assets/data/display-audit.json` — extracted hidden display audit metadata.
+- `assets/data/snapshot-plan.json` — extracted hidden textbook snapshot plan metadata.
+- `sources/` — original handover brief and source Markdown scaffold.
 
-1. Click `first_fixed_opening_ebook/`.
-2. Add or replace `index.html` and this `README.md` from the extracted package.
-3. Click `assets/css/` and upload `book.css`.
-4. Click `assets/js/` and upload `book.js`.
-5. Click `assets/runtime/` and upload `theorem_zero_runtime.html`.
-6. Click `assets/data/` and upload the four JSON files.
-7. Click `sources/` and upload the source Markdown files.
-8. Keep `assets/images/diagrams/` for future still images and exported diagrams.
+## Integration completed
 
-## Note
+- Converted the scaffold into navigable HTML.
+- Preserved source order and learner-facing prose.
+- Installed a runtime-inspired design system with dark field, cyan stations, gold centres, and pale line language.
+- Converted all 84 diagram placeholders into diagram cards with captions and metadata.
+- Added runtime snapshot cues for early construction chapters according to the handover mapping.
+- Embedded the native runtime in a dedicated viewer without modifying the runtime file.
+- Added machine-readable snapshot/audit/ledger data files.
 
-The repository root currently contains `README.md` and `index.html`, but the root `index.html` expects `assets/css/book.css` and related assets. Until the asset folders are uploaded at the root or the nested folder, the standalone page will be visually incomplete.
+## Remaining manual tasks
+
+- Export runtime JPEG stills at the snapshot-plan timestamps and replace the relevant placeholder frames.
+- Author custom diagrams for chapters 1 and 11–26, especially rightness, ratio, trigonometry, coordinate audit, and algebra.
+- Review Appendix A presentation for whether the full ledger should remain inline, be split into separate pages, or be progressively collapsed by theorem group.
+- Run an editorial pass on chapter-level source links after final diagram stills are installed.

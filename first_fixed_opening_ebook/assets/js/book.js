@@ -99,6 +99,49 @@ body { padding-top: 86px !important; }
   box-shadow: 0 0 70px rgba(100,255,210,.18), inset 0 0 60px rgba(143,185,255,.08);
 }
 .pattern-overlay-frame iframe { width: 100%; height: 100%; border: 0; display: block; }
+.companion-card {
+  margin: clamp(1.2rem, 3vw, 2.25rem) 0 clamp(2rem, 5vw, 3.4rem);
+  padding: clamp(1.1rem, 3vw, 1.7rem);
+  border: 1px solid rgba(100,255,210,.24);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 8% 0%, rgba(100,255,210,.13), transparent 18rem),
+    linear-gradient(135deg, rgba(8,19,30,.76), rgba(5,8,13,.64));
+  box-shadow: 0 0 34px rgba(100,255,210,.09), inset 0 0 34px rgba(143,185,255,.055);
+}
+.companion-card .companion-kicker {
+  margin: 0 0 .42rem;
+  color: var(--gold);
+  font-size: .75rem;
+  font-weight: 850;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.companion-card h2 {
+  margin: 0 0 .55rem;
+  color: var(--white-green);
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  letter-spacing: -.025em;
+}
+.companion-card p {
+  max-width: 62ch;
+  margin: 0 0 1rem;
+  color: var(--muted);
+}
+.companion-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .72rem 1rem;
+  border: 1px solid rgba(255,211,110,.34);
+  border-radius: 999px;
+  color: var(--white-green) !important;
+  background: linear-gradient(135deg, rgba(255,211,110,.16), rgba(100,255,210,.1));
+  text-decoration: none !important;
+  font-weight: 850;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
 .artifact-hidden { display: none !important; }
 .diagram-card.cleaned .diagram-earns,
 .diagram-card.cleaned .diagram-source,
@@ -221,6 +264,22 @@ badTextNodes.forEach(node => node.remove());
   if (el.classList.contains('title-page') || el.classList.contains('pattern-overlay')) return;
   if (!norm(el) && !el.querySelector('svg,img,canvas,iframe')) remove(el);
 });
+
+const bookContent = document.querySelector('.book-content') || document.querySelector('main') || document.body;
+if (bookContent && !document.querySelector('.companion-card')) {
+  const card = document.createElement('aside');
+  card.className = 'companion-card';
+  card.setAttribute('aria-label', 'Companion text');
+  card.innerHTML = `
+    <p class="companion-kicker">Companion text</p>
+    <h2>Settlement Gate</h2>
+    <p>A companion white paper on making sentence completion observable through settlement receipts, traversal, and disciplined audit.</p>
+    <a class="companion-link" href="companion/settlement_gate_white_paper.html">Open Settlement Gate</a>
+  `;
+  const titlePage = bookContent.querySelector('.title-page');
+  if (titlePage && titlePage.parentElement === bookContent) titlePage.insertAdjacentElement('afterend', card);
+  else bookContent.prepend(card);
+}
 
 const topButton = document.querySelector('.top-button');
 window.addEventListener('scroll', () => {

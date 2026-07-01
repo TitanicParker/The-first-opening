@@ -3,8 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The First Fixed Opening — HTML eBook</title>
-  <meta http-equiv="refresh" content="0; url=first_fixed_opening_ebook/" />
+  <title>The First Fixed Opening — Project Landing</title>
   <style>
     :root {
       --bg: #05080d;
@@ -12,46 +11,79 @@
       --gold: rgb(255, 211, 110);
       --text: rgba(234, 255, 247, 0.94);
       --muted: rgba(190, 222, 218, 0.72);
+      --line: rgba(100,255,210,.28);
     }
-    html, body { height: 100%; margin: 0; }
+    * { box-sizing: border-box; }
+    html, body { min-height: 100%; margin: 0; }
     body {
       display: grid;
       place-items: center;
+      padding: 32px;
       background:
-        radial-gradient(circle at 50% 42%, rgba(22,45,60,.72), rgba(5,8,13,1) 66%),
-        linear-gradient(180deg, #08131e, var(--bg));
+        radial-gradient(circle at 55% 8%, rgba(100,255,210,.13), transparent 30rem),
+        radial-gradient(circle at 5% 22%, rgba(143,185,255,.13), transparent 34rem),
+        linear-gradient(180deg, #08131e, var(--bg) 38rem, #020409);
       color: var(--text);
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
     main {
-      width: min(720px, calc(100vw - 40px));
-      padding: 42px;
-      border: 1px solid rgba(100,255,210,.28);
-      border-radius: 28px;
-      background: rgba(5,8,13,.72);
+      width: min(980px, 100%);
+      padding: clamp(28px, 5vw, 54px);
+      border: 1px solid var(--line);
+      border-radius: 32px;
+      background: linear-gradient(180deg, rgba(8,19,30,.72), rgba(5,8,13,.58));
       box-shadow: 0 0 42px rgba(100,255,210,.16), inset 0 0 30px rgba(143,185,255,.08);
-      text-align: center;
     }
     .mark {
       width: 72px;
       height: 72px;
-      margin: 0 auto 20px;
       border-radius: 999px;
       border: 1px solid rgba(100,255,210,.4);
       box-shadow: 0 0 28px rgba(100,255,210,.28), inset 0 0 22px rgba(255,211,110,.14);
       background: radial-gradient(circle, rgba(255,211,110,.42), rgba(100,255,210,.16) 48%, rgba(5,8,13,.1) 70%);
     }
-    h1 { margin: 0 0 10px; font-size: clamp(2rem, 5vw, 4rem); letter-spacing: -.04em; }
-    p { color: var(--muted); font-size: 1.1rem; line-height: 1.6; }
-    a { color: var(--cyan); text-decoration-color: rgba(100,255,210,.42); }
+    .eyebrow { margin: 24px 0 0; color: var(--gold); text-transform: uppercase; letter-spacing: .16em; font-size: .78rem; font-weight: 800; }
+    h1 { margin: 10px 0 12px; font-size: clamp(2.5rem, 8vw, 6rem); line-height: .92; letter-spacing: -.055em; }
+    p { max-width: 760px; color: var(--muted); font-size: 1.12rem; line-height: 1.65; }
+    .actions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 28px; }
+    .card {
+      display: grid;
+      gap: 8px;
+      min-height: 150px;
+      padding: 20px;
+      border: 1px solid rgba(100,255,210,.2);
+      border-radius: 22px;
+      background: rgba(5,8,13,.42);
+      color: var(--text);
+      text-decoration: none;
+    }
+    .card:hover { text-decoration: none; border-color: rgba(255,211,110,.42); }
+    .card strong { color: var(--text); font-size: 1.05rem; }
+    .card span { color: var(--muted); line-height: 1.45; }
+    .card.primary { border-color: rgba(255,211,110,.48); background: linear-gradient(135deg, rgba(255,211,110,.14), rgba(100,255,210,.08)); }
+    @media (max-width: 760px) { body { padding: 18px; } .actions { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
   <main>
     <div class="mark" aria-hidden="true"></div>
-    <h1>The First Fixed Opening</h1>
-    <p>Opening the eBook…</p>
-    <p><a href="first_fixed_opening_ebook/">Click here if the book does not open automatically.</a></p>
+    <p class="eyebrow">The First Fixed Opening</p>
+    <h1>Construction, bridge, settlement.</h1>
+    <p>This project now has three public doors: the source-earned geometry book, the twelve-essay prose bridge, and the Settlement Gate white paper on auditable sentence completion.</p>
+    <div class="actions">
+      <a class="card" href="first_fixed_opening_ebook/">
+        <strong>Read the eBook</strong>
+        <span>The fixed-opening construction, runtime, proof ledger, diagrams, and curriculum scaffold.</span>
+      </a>
+      <a class="card primary" href="bridge_essays/">
+        <strong>Read the Bridge Essays</strong>
+        <span>Twelve essays explaining how construction receipts become settlement receipts.</span>
+      </a>
+      <a class="card" href="first_fixed_opening_ebook/companion/settlement_gate_white_paper.html">
+        <strong>Read Settlement Gate</strong>
+        <span>The protocol for making sentence completion observable before language governs action.</span>
+      </a>
+    </div>
   </main>
 </body>
 </html>
